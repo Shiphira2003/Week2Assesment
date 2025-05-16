@@ -1,0 +1,276 @@
+body {
+    font-family: 'rubis', sans-serif;
+    background-color: #1c1f2a;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+.main-container {
+    max-width: 1100px;
+    width: 95%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+}
+.profile-container {
+    background-color: #2d3748;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #63b3ed;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.profile-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+}
+.profile-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    width: 100%;
+}
+.profile-option {
+    color: #9ca3af;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+.profile-option:hover,
+.profile-option.active {
+    color: #fff;
+    font-weight: 500;
+}
+.profile-option.active {
+    font-weight: 600;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.activity-card {
+    background-color: #2d3748;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.activity-card:hover {
+    background-color: #3e4e65;
+}
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.activity-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.activity-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.8;
+}
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    text-align: left;
+}
+.activity-hours {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.activity-previous {
+    font-size: 16px;
+    color: #9ca3af;
+}
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 40px;
+}
+.attribution a {
+    color: #63b3ed;
+}
+.work {
+    background-image: linear-gradient(to bottom, #ff8c00, #ff8c00);
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.work .activity-icon {
+    background-color: #ff8c00;
+}
+.play {
+    background-image: linear-gradient(to bottom, #007cf0, #007cf0);
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.play .activity-icon {
+    background-color: #007cf0;
+}
+.study {
+    background-image: linear-gradient(to bottom, #4ec51e, #4ec51e);
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.study .activity-icon {
+    background-color: #4ec51e;
+}
+.exercise {
+    background-image: linear-gradient(to bottom, #f1c40f, #f1c40f);
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.exercise .activity-icon {
+    background-color: #f1c40f;
+}
+.social {
+    background-image: linear-gradient(to bottom, #753ef4, #753ef4);
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.social .activity-icon {
+    background-color: #753ef4;
+}
+.self-care {
+    background-image: linear-gradient(to bottom, #f037a5, #f037a5);
+    background-position: 90% 10%;
+    background-size: 50px;
+}
+.self-care .activity-icon {
+    background-color: #f037a5;
+}
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .profile-container {
+        align-items: center;
+        text-align: center;
+    }
+    .profile-header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .profile-options {
+        align-items: center;
+    }
+    .profile-option {
+        margin-bottom: 10px;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1040px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .activity-card {
+        padding: 20px;
+    }
+
+    .activity-title {
+        font-size: 18px;
+    }
+
+    .activity-hours {
+        font-size: 32px;
+    }
+
+    .activity-previous {
+        font-size: 14px;
+    }
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .activity-card {
+        padding: 15px;
+    }
+    .activity-title {
+        font-size: 16px;
+    }
+    .activity-hours {
+        font-size: 28px;
+    }
+    .activity-previous {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .activity-card {
+        padding: 20px;
+    }
+
+    .activity-title {
+        font-size: 18px;
+    }
+
+    .activity-hours {
+        font-size: 30px;
+    }
+
+    .activity-previous {
+        font-size: 14px;
+    }
+}

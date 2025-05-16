@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Time tracking dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="profile-image">
+                <div>
+                    <p class="report-for">Report for</p>
+                    <h1 class="profile-name">Jeremy Robson</h1>
+                </div>
+            </div>
+            <div class="profile-options">
+                <div class="profile-option" data-timeframe="daily">Daily</div>
+                <div class="profile-option active" data-timeframe="weekly">Weekly</div>
+                <div class="profile-option" data-timeframe="monthly">Monthly</div>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="activity-card work">
+                <div class="activity-header">
+                    <h2 class="activity-title">Work</h2>
+                    <div class="activity-icon">
+                         <img src="./images/icon-work.svg" alt="Work icon" />
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">32hrs</div>
+                    <p class="activity-previous">Last Week - 36hrs</p>
+                </div>
+            </div>
+            <div class="activity-card play">
+                <div class="activity-header">
+                    <h2 class="activity-title">Play</h2>
+                    <div class="activity-icon">
+                        <img src="./images/icon-play.svg" alt="play icon" />
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">10hrs</div>
+                    <p class="activity-previous">Last Week - 8hrs</p>
+                </div>
+            </div>
+            <div class="activity-card study">
+                <div class="activity-header">
+                    <h2 class="activity-title">Study</h2>
+                    <div class="activity-icon">
+                      <img src="./images/icon-study.svg" alt="study icon" />
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">4hrs</div>
+                    <p class="activity-previous">Last Week - 7hrs</p>
+                </div>
+            </div>
+            <div class="activity-card exercise">
+                <div class="activity-header">
+                    <h2 class="activity-title">Exercise</h2>
+                    <div class="activity-icon">
+                        <img src=" ./images/icon-exercise.svg" alt="exercise icon" />
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">4hrs</div>
+                    <p class="activity-previous">Last Week - 5hrs</p>
+                </div>
+            </div>
+            <div class="activity-card social">
+                <div class="activity-header">
+                    <h2 class="activity-title">Social</h2>
+                    <div class="activity-icon">
+                         <img src="./images/icon-social.svg" alt="social icon"/>
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">5hrs</div>
+                    <p class="activity-previous">Last Week - 10hrs</p>
+                </div>
+            </div>
+            <div class="activity-card self-care">
+                <div class="activity-header">
+                    <h2 class="activity-title">Self Care</h2>
+                    <div class="activity-icon">
+                         <img src="./images/icon-self-care.svg" alt="self-care icon" />
+                    </div>
+                </div>
+                <div class="activity-details">
+                    <div class="activity-hours">2hrs</div>
+                    <p class="activity-previous">Last Week - 2hrs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+        Coded by <a href="#">shiphira</a>.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
